@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:ital,wght@0,100;0,400;1,500&family=Roboto+Slab&family=Ubuntu&family=Ubuntu+Mono&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-image: url(https://s3.ap-south-1.amazonaws.com/kalvi-education.github.io/front-end-web-development/cricpro-bg.png);
+    background-position-x: right;
+    background-position-y: 10vh;
+    background-repeat: no-repeat;
+    background-size: 70%;
+}
+#logo{
+    position: absolute;
+    right: 3vw;
+    top: 1vw;
+}
+#heading{
+    position: absolute;
+    top: 10vh;
+    left: 10vh;
+}
+.h1{
+    font-size: 50px;
+    text-shadow: -1px 5px 8px black;
+    font-weight: 1000;
+}
+.h4{
+    font-size: 30px;
+    color: grey;
+}
+table{
+    width: 65%;
+    margin: 30vh 0vh 1.5vh 10vh;
+    background-color: white;
+    border-collapse: collapse;
+    font-size: 19px;
+    border-bottom:2px solid white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+td{
+    border-bottom: 1px solid grey;
+    padding: 1vh;
+}
+thead{
+    background-color: rgba(240,80,54,255);
+    color: white;
+    border-bottom: 2px solid red
+}
+.Batsman{
+    color: #3181ed ;
+    cursor: pointer;
+}
+footer{
+    margin-left: 10vh;
+}
+.stats{
+    position: fixed;
+    top: 35%;
+    left: 31%;
+}
