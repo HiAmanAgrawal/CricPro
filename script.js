@@ -1,4 +1,6 @@
 var batsman = document.querySelectorAll(".Batsman");
+
+var div = document.getElementById("image");
 var images = [
     '<img class=" stats b1" src="https://s3.ap-south-1.amazonaws.com/kalvi-education.github.io/front-end-web-development/cricpro-sehwag.png" alt="Sehwag-stats">',
     '<img class=" stats b2" src="https://s3.ap-south-1.amazonaws.com/kalvi-education.github.io/front-end-web-development/cricpro-sachin.png" alt="sachin-stats">',
@@ -12,6 +14,8 @@ var images = [
     '<img class=" stats b10" src="https://s3.ap-south-1.amazonaws.com/kalvi-education.github.io/front-end-web-development/cricpro-munaf-patel.jpg" alt="munaf-stats">',
     '<img class=" stats b11" src="https://s3.ap-south-1.amazonaws.com/kalvi-education.github.io/front-end-web-development/cricpro-sreeshanth.jpg" alt="Sreesanth-stats">',
 ]
+div.onclick = function(){disappear()};
+
 batsman[0].onclick = function(){appear(0)};
 batsman[1].onclick = function(){appear(1)};
 batsman[2].onclick = function(){appear(2)};
@@ -24,6 +28,12 @@ batsman[8].onclick = function(){appear(8)};
 batsman[9].onclick = function(){appear(9)};
 batsman[10].onclick = function(){appear(10)};
 batsman[11].onclick = function(){appear(11)};
+
 function appear(a) {
-    document.getElementById("image").innerHTML = images[a];
-  }
+    div.style.display = "block";
+    div.innerHTML = images[a];
+}
+
+function disappear() {
+    div.style.display = "none";
+}

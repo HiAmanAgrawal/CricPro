@@ -56,8 +56,9 @@ thead{
 footer{
     margin-left: 10vh;
 }
-.stats{
+#image{
     position: fixed;
     top: 35%;
     left: 31%;
 }
+
